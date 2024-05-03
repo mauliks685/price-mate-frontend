@@ -1,0 +1,523 @@
+:root {
+    /* color */
+    --primaryColor: #ff780a;
+    --secondaryColor: #3c4a4f;
+    --lightColor: #fff;
+    --darkColor: #000;
+    --lighBgColor: #eee;
+    --primaryBgColor: rgba(255,120,10, 0.1);
+    --secondaryBgColor: rgba(60,74,79,0.3);
+    --border-color: rgb(235, 235, 235);
+    --duration: 1.5s;
+    --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body {
+	/* font-size: 26px;
+	line-height: 1.2; */
+	font-family: 'Raleway', sans-serif;
+	background: #fff;
+	font-weight: 400;
+	text-align: left;
+	overflow-x: hidden;
+	font-size: 1.125rem;
+}
+
+h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	color: var(--primaryColor);
+	font-weight: 700;
+	line-height: 1.2;
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	outline: 0 none;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+[type="search"] {
+	box-shadow: none;
+}
+
+body .bg-primary {
+    background-color: var(--secondaryColor) !important;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+a {
+    color: var(--secondaryColor);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover,
+a:active {
+    color: var(--primaryColor);
+}
+/* button css start */
+.btn {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 35px;
+    border-radius: 5px;
+}
+.btn.btn-sm {
+    padding: 10px 15px;
+}
+.btn.btn-link {
+    text-decoration: none;
+    --bs-btn-color: var(--secondaryColor);
+    --bs-btn-hover-color: var(--primaryColor);
+    --bs-btn-active-color: var(--primaryColor);
+}
+.btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.btn-check:active+.btn-primary:focus, 
+.btn-check:checked+.btn-primary:focus, 
+.btn-primary.active:focus, 
+.btn-primary:active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.btn-primary {
+    color: var(--lightColor);
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+.btn-primary:active, 
+.btn-primary:focus,
+.btn-primary:hover {
+    color: var(--lightColor);
+    background-color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+}
+.btn-secondary {
+    color: var(--lightColor);
+    background-color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+}
+.btn-secondary:focus,
+.btn-secondary:hover {
+    color: var(--lightColor);
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+/* button css start */
+
+
+/* Header css start */
+.main-logo,
+.navbar-brand {
+    max-width: 90px;
+	margin: 0 auto 0 0;
+}
+
+.navbar {
+	--bs-nav-link-color: var(--secondaryColor);
+    --bs-nav-link-hover-color: var(--secondaryColor);
+	--bs-navbar-active-color: var(--primaryColor);
+}
+
+.nav-link {
+	font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+div#basic-navbar-nav {
+    flex-grow: unset;
+}
+
+.search-form .input-group {
+    min-width: 250px;
+}
+
+.search-form .input-group>.form-control {
+    font-size: 0.9rem;
+    padding: 0 0 0 15px;
+}
+
+.search-form .input-group>.form-control:focus,
+.search-form .input-group>.form-control:active {
+    outline: none;
+    box-shadow: none;
+}
+
+#btnSearch {
+    padding: 10px;
+}
+
+#btnSearch i {
+    color: var(--primaryColor);
+}
+
+.search-form-container {
+    border: 1px solid var(--primaryColor);
+    padding: 0 15px;
+}
+/* Header css end */
+
+
+/* Footer css start */
+.footer-top {
+    background-color: var(--primaryBgColor);
+    padding: 3rem 0;
+}
+.footer-bottom {
+    background-color: var(--primaryColor);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--lightColor);
+}
+.foot-box .nav {
+    display: flex;
+    flex-direction: column;
+}
+.foot-box a.nav-link {
+    color: var(--secondaryColor);
+    padding: 0;
+    font-weight: 600;
+}
+.foot-box a.nav-link:hover,
+.foot-box a.nav-link.active {
+    color: var(--primaryColor);
+}
+.footer-bottom a {
+    color: var(--lightColor);
+}
+.footer-bottom a:hover,
+.footer-bottom a:active {
+    color: var(--lightColor);
+}
+.foot-box a {
+    font-weight: 500;
+}
+.foot-box img {
+    max-width: 90px;
+}
+address p {
+    margin: 0 0 3px;
+}
+.footer-top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icons {
+    display: flex;
+}
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: var(--secondaryBgColor);
+    color: #fff;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.social-icons a:hover {
+    background: var(--secondaryColor);
+}
+/* Footer css end */
+
+
+/* Landing page css start */
+.carousel-item {
+    height: 550px;
+	position: relative;
+}
+
+.bg-overlay {
+    background-image: -moz-linear-gradient(-29deg, #000 0px, #000 100%);
+    background-image: -moz-linear-gradient(-29deg, #000 0, #000 100%);
+    background-image: -webkit-linear-gradient(-29deg, #000 0, #000 100%);
+    background-image: -ms-linear-gradient(-29deg, #000 0, #000 100%);
+    background-image: linear-gradient(-29deg, #000 0, #000 100%);
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.carousel-item .img-fluid {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+.carousel-caption {
+    left: 50%;
+    top: 50%;
+	bottom: auto;
+	right: auto;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.price-mate-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+}
+
+.price-mate-icon img {
+    max-width: 100px;
+}
+
+.carousel-caption h3 {
+    color: var(--lightColor);
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+}
+.features-section .card {
+    border: none;
+    align-items: center;
+    text-align: center;
+}
+.features-section .card-img-top {
+    max-width: 120px;
+    width: auto;
+}
+.features-section .card-title {
+    color: var(--secondaryColor)
+}
+.how-it-works-section {
+    background-color: var(--lighBgColor);
+}
+body .badge.bg-primary {
+    font-size: 2rem;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.banner-container-reverse {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+.text-side {
+    width: 50%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: #E9E9E9;
+}
+.img-side {
+    width: 50%;
+    text-align: end;
+    background-color: #E9E9E9;
+}
+.img-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Landing page css end */
+
+/* Login page css start */
+.form-with-bg {
+    border: 3px solid var(--primaryColor);
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.form-control {
+    background-color: #f7f7f7;
+    border: 1px solid var(--secondaryColor);
+}
+.form-label {
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+.form-control[aria-invalid="true"] {
+    border-color: #ff0000;
+}
+.register-link a {
+    font-weight: 600;
+}
+/* Login page css end */
+
+/* Product page css start */
+.product {
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.5); */
+    padding: 15px;
+    /* border-radius: 10px; */
+    height: 100%;
+    border: 1px solid;
+    border-color: var(--border-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-header {
+    display: block;
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+    padding: 15px 0;
+    width: 100%;
+}
+.product-platform {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+.product-title {
+    word-wrap: break-word;
+    font-size: 0.9rem;
+}
+.product:before, .product:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    display: block;
+    z-index: 1;
+    background-color: var(--primaryColor);
+    transition: all ease .35s;
+    opacity: 0;
+}
+.product:before {
+    left: -1px;
+    bottom: -1px;
+    top: 100%;
+}
+.product:hover:before {
+    top: -1px;
+    opacity: 1;
+}
+.product:after {
+    right: -1px;
+    top: -1px;
+    bottom: 100%;
+}
+.product:hover:after {
+    bottom: -1px;
+    opacity: 1;
+}
+.product-line:before, .product-line:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    display: block;
+    z-index: 1;
+    background-color: var(--primaryColor);
+    transition: all ease .35s;
+    opacity: 0;
+}
+.product-line:before {
+    top: -1px;
+    left: -1px;
+    right: 100%;
+}
+.product-line:after {
+    bottom: -1px;
+    right: -1px;
+    left: 100%;
+}
+.product:hover .product-line:before {
+    right: 0;
+    opacity: 1;
+}
+.product:hover .product-line:after {
+    left: 0;
+    opacity: 1;
+}
+div#filterSection > * {
+    width: 100%;
+}
+.pagination-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.page-link,
+.page-link:focus {
+    color: var(--primaryColor);
+    border: var(--bs-pagination-border-width) solid var(--primaryColor);
+    background-color: var(--lightColor);
+}
+.active>.page-link, 
+.page-link.active,
+.page-link:hover {
+    color: var(--lighBgColor);
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+.page-link:focus,
+.page-link:active {
+    box-shadow: none;
+    outline: none;
+}
+/* Product page css end */
+
+
+/* 
+COLORS: 
+Orange = #ff780a
+Gray = #3c4a4f
+
+FONT FAMILY
+font-family: 'Raleway', sans-serif;
+light: 300
+Regular: 400
+Medium: 500
+Semi Bold: 600
+Bold: 700
+Extra Bold: 800
+Black: 900
+*/
